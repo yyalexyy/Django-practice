@@ -1,0 +1,23 @@
+<!--{% extends 'main/base.html' %}
+
+{% block titlte %}Register{% endblock %}
+
+{% block content %}
+		<form method="POST" class="form-group"> 
+			{% csrf_token %}
+			{{form}}
+			<button type="submit", class="btn btn-success">Register</button>
+		</form>
+{% endblock %}
+-->
+
+{% extends "main/base.html" %}
+
+{% block title %}Create an Account{% endblock %}
+
+{% block content %}
+	<form method="POST" class="form-group">
+		{{form}}
+		<button type="submit" class="btn btn-success">Register</button>
+	</form>
+{% endblock %}
